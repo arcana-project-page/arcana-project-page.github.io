@@ -44,6 +44,27 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centering Image Example</title>
+  <style>
+      .item {
+          text-align: center; /* Center the contents inside the item div */
+      }
+      .item img {
+          display: inline-block; /* Make the image inline-block to apply text-align */
+          max-width: 100%; /* Ensure the image scales with the container */
+          height: auto; /* Maintain the aspect ratio */
+      }
+      .subtitle.has-text-centered {
+          margin-top: 1rem; /* Add some margin between the image and the subtitle */
+      }
+  </style>
+</head>
+
+
 <body>
 
 
@@ -101,7 +122,7 @@
                   </span>
 
                   <span class="link-block">
-                    <a href="https://huggingface.co/syp115/Arcana" target="_blank"
+                    <a href="https://huggingface.co/datasets/syp115/Arcana_VG-COCO" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fa fa-database"></i>
@@ -147,27 +168,11 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            We are interested in improving the visual understanding capability for boosting the
-            vision-language models. Therefore, we propose Arcana, a multimodal language
-            model, introducing two crucial techniques. Firstly, we introduce multimodal LoRA
-            (MM-LoRA) to construct a multimodal decoder. Unlike traditional language-driven
-            decoders, multimodal LoRA employs separate parameters for visual and language
-            modalities, avoiding information confusion while preserving the uniqueness of each
-            modality. Secondly, we propose a Query Ladder adapter (QLadder) for the visual
-            encoder. By retaining the pre-trained image encoder’s capabilities and introducing
-            a small number of visual tokens, QLadder significantly enhances the model’s
-            learning and representation abilities for visual information. Inspired by traditional
-            query mechanisms, QLadder adopts a "ladder" structure to progressively refine
-            and strengthen the extraction and fusion of visual features. Extensive experiments
-            demonstrate the effectiveness and generalization ability of Arcana. Furthermore,
-            we propose a data engine focused on the diversity and richness of visual perception
-            annotations, ensuring comprehensive visual perception information in annotations
-            through diverse image annotation models. We annotate images in the open-source
-            datasets VG and COCO to obtain more detailed image descriptions, crucial for the
-            understanding of images by multimodal models.
+            The <b>visual perception capabilities </b> of MLLMs directly impact their performance. It is well-known that the main factors influencing MLLMs' visual perception are <b>data</b> and <b>structure</b>.
+              Arcana aims to enhance the visual perception capabilities of MLLMs by addressing both of these aspects.
           </p>
         </div>
       </div>
@@ -176,8 +181,7 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
+<!-- Motivation carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -186,15 +190,103 @@
         <!-- Your image here -->
         <img src="static/images/motivation.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          (a) Sampled some VQA examples involving color, quantity, small objects, and localization
+          Sampled some VQA examples involving color, quantity, small objects, and localization
           tasks, showcasing the importance of visual recognition capabilities for multimodal language models
-          (MLLMs). (b) Contrasting Arcana’s multimodal decoder with mainstream methods’ language driven
-          decoder. The language-driven decoder employs a language decoder (LLMs) directly to handle tokens
-          from different modalities, which may lead to modality interference and performance degradation. In
-          contrast, the multimodal decoder independently processes different token types to avoid modality
-          interference
+          (MLLMs).
         </h2>
       </div>
+      <div class="item">
+        <img src="static/images/motivation.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Sampled some VQA examples involving color, quantity, small objects, and localization
+          tasks, showcasing the importance of visual recognition capabilities for multimodal language models
+          (MLLMs).
+        </h2>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Motivation carousel -->
+
+
+
+<!-- Dataset Contribution -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">High-quality and Fine-grained Instruction Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            On the data side, there is a scarcity of open-source data, and the available multimodal datasets contain limited visual components, preventing MLLMs from gaining sufficient visual perception capabilities from these sources.  To this end, we have developed a data engine to annotate multimodal data that ensures a diversity of visual factors. The specific process is as follows:
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Dataset Contribution -->
+
+
+<!-- Image Dataset -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/dataset_example.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          LLaVA’s coarse-grained caption v.s. Our fine-grained caption. Important visual recognitionrelated description are highlighted in orange.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/dataset_engine.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The Arcana data engine involves three crucial steps:
+          (1) initializing and filtering image
+          annotations,
+          (2) obtaining diverse attribute annotations for each annotated region, and
+          (3) using a
+          large language model to integrate these visual annotations into different types of captions.
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image dataset -->
+
+<!-- Model -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Model</h2>
+        <div class="content has-text-justified">
+          <p>
+            On the structural side, the language-driven decoder couples visual and language modalities within the same space, disregarding their unique characteristics and potentially causing information confusion or blurring.
+             Furthermore, the frozen visual encoder cannot provide robust visual features, and directly fine-tuning it with a small dataset can affect its generalization capabilities.
+              Toward this end, Arcana introduces MM-LoRA, which constructs a multimodal decoder to preserve the unique characteristics of different modalities.
+               We also propose a Query Ladder adapter (QLadder) for the visual encoder, which retains the pre-trained image encoder's capabilities while introducing a small number of visual tokens to significantly enhance the model's ability to learn and represent visual information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Model -->
+
+<!-- Model carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/framework.png" alt="MY ALT TEXT"/>
@@ -219,7 +311,27 @@
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!-- End Model carousel -->
+
+
+<!-- Model -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our Arcana model achieves competitive performance among the exisiting 7B models.
+            To validate the effectiveness of QLadder and MM-LoRA, we designed a series of experiments.
+            Additionally, to ensure fairness, we use only LLAVA-v1.5 data for the ablation experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Model -->
 
 <!-- Experiments carousel -->
 <section class="hero is-small">
@@ -264,21 +376,6 @@
 </div>
 </section>
 <!-- Experiments carousel -->
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/Arcana.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
