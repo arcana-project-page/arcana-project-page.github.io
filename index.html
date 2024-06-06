@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Arcana: Improving Multi-modal Large Language Model through Boosting Vision Capabilities</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Arcana: Improving Multi-modal Large Language Model through Boosting Vision Capabilities</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=a3FI8c4AAAAJ" target="_blank">Yanpeng Sun</a><sup>1,2*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=oyfu0pgAAAAJ&hl=zh-CN" target="_blank">Huaxin Zhang</a><sup>2,3*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=CUGCp3sAAAAJ" target="_blank">Qiang Chen</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=PSzJxD8AAAAJ" target="_blank">Xinyu Zhang</a><sup>2</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com.hk/citations?user=ky_ZowEAAAAJ&hl=zh-CN" target="_blank">Nong Sang</a><sup>3</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://scholar.google.com.hk/citations?user=z5SPCmgAAAAJ&hl=zh-CN" target="_blank">Jingdong Wang</a><sup>2</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=L6J2V3sAAAAJ" target="_blank">Zechao Li</a><sup>1&#9993;</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology,&nbsp;&nbsp;&nbsp;</span>
+                    <span class="author-block"><sup>2</sup>Baidu VIS,</span> <br>
+                    <span class="author-block"><sup>3</sup>Huazhong University of Science and Technology</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution&nbsp;&nbsp;&nbsp;&#9993;Indicates Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/syp115/Arcana" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span>HuggingFace</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/syp2ysy/Arcana" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We are interested in improving the visual understanding capability for boosting the
+            vision-language models. Therefore, we propose Arcana, a multimodal language
+            model, introducing two crucial techniques. Firstly, we introduce multimodal LoRA
+            (MM-LoRA) to construct a multimodal decoder. Unlike traditional language-driven
+            decoders, multimodal LoRA employs separate parameters for visual and language
+            modalities, avoiding information confusion while preserving the uniqueness of each
+            modality. Secondly, we propose a Query Ladder adapter (QLadder) for the visual
+            encoder. By retaining the pre-trained image encoder’s capabilities and introducing
+            a small number of visual tokens, QLadder significantly enhances the model’s
+            learning and representation abilities for visual information. Inspired by traditional
+            query mechanisms, QLadder adopts a "ladder" structure to progressively refine
+            and strengthen the extraction and fusion of visual features. Extensive experiments
+            demonstrate the effectiveness and generalization ability of Arcana. Furthermore,
+            we propose a data engine focused on the diversity and richness of visual perception
+            annotations, ensuring comprehensive visual perception information in annotations
+            through diverse image annotation models. We annotate images in the open-source
+            datasets VG and COCO to obtain more detailed image descriptions, crucial for the
+            understanding of images by multimodal models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/motivation.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          (a) Sampled some VQA examples involving color, quantity, small objects, and localization
+          tasks, showcasing the importance of visual recognition capabilities for multimodal language models
+          (MLLMs). (b) Contrasting Arcana’s multimodal decoder with mainstream methods’ language driven
+          decoder. The language-driven decoder employs a language decoder (LLMs) directly to handle tokens
+          from different modalities, which may lead to modality interference and performance degradation. In
+          contrast, the multimodal decoder independently processes different token types to avoid modality
+          interference
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          (a) The architecture of the Arcana. (b) The training pipeline of Arcana. MM-LoRA is optional during the pre-training phase.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mmlora.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          (a) The farmework of MM-LoRA vs. LoRA. MM-LoRA introduces two new hyperparameters, &beta; and &gamma;
+          , to control the ranks of the visual and language LoRAs, respectively. Notably,
+          we set &beta; + &gamma; = 1 to ensure that MM-LoRA has the same number of parameters as LoRA. (b) The
+          architecture of the visual encoder includes the QLadder adapter and CLIP. The QLadder adapter
+          consists of cross-attention and FFN layers, with weights initialized from those of CLIP.
+       </h2>
+     </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Experiments carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/exp_vqa.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Performance on General Visual Question Answering benchmarks.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/exp_mm.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Performance on Large Vision-Language Models (LVLM) benchmarks.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/exp_ablation.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Ablation study.
+       </h2>
+     </div>
+     <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/exp_attn.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+      </h2>
+      </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/exp_quality.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+    </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Experiments carousel -->
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/Arcana.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
