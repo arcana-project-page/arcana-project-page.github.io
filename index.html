@@ -290,7 +290,7 @@
         </style>        
           <div class="column is-six-fifths" width="80%">
             <h3 class="title is-4 has-text-centered">
-              <a href="https://huggingface.co/datasets/syp115/Arcana_VG-COCO" target="_blank" style="text-decoration: underline; color: inherit;">Arcana_VG-COCO</a>
+              <a href="https://huggingface.co/datasets/syp115" target="_blank" style="text-decoration: underline; color: inherit;">Arcana_VG-COCO(coming soon)</a>
             </h3>
             <div class="table-container">
               <table class="GeneratedTable">
@@ -312,11 +312,12 @@
       "id": "image_id",
       "image": "image_path",,
       "conversations":[
-        { "from": "human", "value": "&lt;image&gt;\nDescribe the following image in detail" },
-        { "from": "gpt", "value": "The scene captures an airport environment with 
-        a large white and green airplane, possibly a jumbo jet, parked on the runway.
-        The airplane features a color scheme of red and green, alluding to its
-        distinctive appearance..."}
+        { "from": "human", "value": "&lt;image&gt;\nProvide a detailed description
+        of the following image" },
+        { "from": "gpt", "value": "The scene depicts an airport setting with a 
+        sizable white and green airplane, likely a jumbo jet, stationed on the
+        runway. The airplane showcases a color scheme of red and green,
+        highlighting its unique look.."}
       ]
     }
                       </pre>
@@ -332,10 +333,10 @@
       "id": "image_id",
       "image": "image_path",,
       "conversations":[
-        { "from": "human", "value": "&lt;image&gt;\nI would like a comprehensive depiction of
-         the region bounded by (0.286, 0.342, 0.658, 0.484)." },
-        {"from": "gpt", "value": "It is a large red double-decker bus with a colorful
-         advertisement on the side."},
+        { "from": "human", "value": "&lt;image&gt;\nProvide a comprehensive
+        depiction of the area bounded by [0.286, 0.342, 0.658, 0.484]." },
+        {"from": "gpt", "value": "The area features a large red double-decker
+        bus with a vibrant advertisement displayed on its side.."},
          ...
       ]
     }
@@ -352,9 +353,10 @@
       "id": "image_id",
       "image": "image_path",,
       "conversations":[
-        { "from": "human", "value": "&lt;image&gt;\nWhat category encompasses the region
-         defined by the coordinates (0.324, 0.523, 0.338, 0.538)?" },
-        {"from": "gpt", "value": "Within the taxonomy, this region is categorized as window."},
+        { "from": "human", "value": "&lt;image&gt;\nDetect the category encompasses
+        the region defined by the coordinates [0.324, 0.523, 0.338, 0.538]?" },
+        {"from": "gpt", "value": "According to the taxonomy, this region is 
+        categorized as a window."},
         ...
       ]
     }
@@ -371,12 +373,12 @@
       "id": "image_id",
       "image": "image_path",,
       "conversations":[
-        { "from": "human", "value": "&lt;image&gt;\nPlease tell me what text is in 
-        this region (0.142, 0.863, 0.225, 0.892)." },
+        { "from": "human", "value": "&lt;image&gt;\nProvide the text in 
+        the area bounded by [0.142, 0.863, 0.225, 0.892]." },
         { "from": "gpt", "value": "The text is 2726B2V."},
-        { "from": "human", "value": "Please tell me where the text 2726B2V is in
+        { "from": "human", "value": "Tell me where the text 2726B2V is in
          this picture." },
-        { "from": "gpt", "value": "(0.142, 0.863, 0.225, 0.892)." }
+        { "from": "gpt", "value": "The text is in [0.142, 0.863, 0.225, 0.892]." }
       ]
     }
                       </pre>
